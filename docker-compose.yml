@@ -1,0 +1,23 @@
+services:
+  connection:
+    build: ./
+    command: python src/main.py
+    restart: on-failure
+    environment:
+      SF_USERNAME: "***"
+      SF_PASSWORD: "***"
+      SF_ACCOUNT: "XXX.eu-west-1.aws.snowflakecomputing.com"
+      SF_WAREHOUSE: "EXAMPLE_WH"
+      SF_DATABASE: "MARVEL_DB"
+      SF_ROLE: "EXAMPLE_ROLE"
+      SF_SCHEMA: "MARVEL_SCH"
+      SF_IAM_ID: "11111111111"
+      BUCKET_NAME: "your-bucket-name"
+      BUCKET_REGION: "eu-west-1"
+      API_PUBLIC_KEY: "***"
+      API_PRIVATE_KEY: "***"
+      STORAGE_AWS_IAM_USER_ARN: "arn:aws:iam::xxxx:user/xxxx"
+      STORAGE_AWS_EXTERNAL_ID: "***"
+      AWS_ACCESS_KEY_ID: "***"
+      AWS_SECRET_ACCESS_KEY: "***"
+      AWS_SESSION_TOKEN: "***"
