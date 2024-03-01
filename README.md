@@ -5,7 +5,7 @@ python code dedicated to the initial Snowflake setup needed for the ingestion (v
 
 The pipeline flow:
 
-![](C:\Users\vk_27\Downloads\Ingestion FLow.png)   
+  ![Ingestion FLow](https://github.com/veronika-27/marvel-ingestion/assets/64424805/5fd6b512-d2fe-4463-a8dd-228570016946)
 
 The data from the API is ingested into the Snowflake using an S3 bucket (as external stage).
                                                                                                  
